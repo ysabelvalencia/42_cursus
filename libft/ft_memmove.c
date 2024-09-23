@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 17:19:11 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/23 17:23:35 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/09/23 17:38:43 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,4 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	return (0);
 }
