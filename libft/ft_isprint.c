@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ysavalen <ysavalen@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 18:14:29 by ysavalen          #+#    #+#             */
 /*   Updated: 2024/09/23 13:41:47 by ysavalen         ###   ########.fr       */
