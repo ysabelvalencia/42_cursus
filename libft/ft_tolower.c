@@ -6,13 +6,13 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 00:05:21 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/24 00:05:21 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/09/24 11:57:08 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'A')
 		c += 32;

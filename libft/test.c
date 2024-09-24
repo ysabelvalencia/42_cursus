@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:10:47 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/23 16:56:10 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/09/24 14:18:26 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -364,5 +364,61 @@ int	main()
     printf("Longitud de dst: %zu\n", ft_strlen(dst));
 
     return 0;
+}
+*/
+
+/*
+char    *ft_strchr(const char *s, int c)
+{
+        while (*s != '\0')
+        {
+                if (*s == (char) c)
+                        return ((char *)s);
+                s++;
+        }
+        if (c == '\0')
+                return ((char *) s);
+        return (NULL);
+}
+
+int	main(void)
+{
+    char *result;
+
+    result = ft_strchr("Hola, mundo!", 'm');
+    printf("Resultado: %s\n", result ? result : "No encontrado");
+
+    result = ft_strchr("Hola, mundo!", 'z');
+    printf("Resultado: %s\n", result ? result : "No encontrado");
+
+    return (0);
+}
+
+*/
+
+/*
+char    *ft_strrchr(const char *s, int c)
+{
+        const char      *last;
+
+        last = NULL;
+        while (*s != '\0')
+        {
+                if (*s == (char) c)
+                        last = s;
+                s++;
+        }
+        if (c == '\0')
+                return ((char *)s);
+        return ((char *)last);
+}
+
+int	main(void)
+{
+    const char *str = "Mississippi";
+    char ch = 's';
+
+    printf("La última aparición de '%c' es: %s\n", ch, ft_strrchr(str, ch));
+    return (0);
 }
 */
