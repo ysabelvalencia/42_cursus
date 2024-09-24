@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:10:47 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/24 14:18:26 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:35:21 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -419,6 +419,61 @@ int	main(void)
     char ch = 's';
 
     printf("La última aparición de '%c' es: %s\n", ch, ft_strrchr(str, ch));
+    return (0);
+}
+*/
+/*
+int     ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+        if (n == 0)
+                return (0);
+        if (*s1 != *s2)
+                return ((unsigned char) *s1 - (unsigned char) *s2);
+        if (n == 1)
+                return (0);
+        return (ft_strncmp (s1 + 1 , s2 + 1, n - 1));
+}
+
+int     main(void)
+{
+    const char *str1 = "Hola";
+    const char *str2 = "HolaMundo";
+    size_t n = 5;
+
+    printf("Resultado de la comparación: %d\n", ft_strncmp(str1, str2, n));
+
+    return (0);
+}
+*/
+/*
+void    *ft_memchr(const void *s, int c, size_t n)
+{       
+        const unsigned char *ptr;
+        unsigned char ch;
+
+        ptr = s;
+        ch = (unsigned char)c;
+        if (n == 0)
+                return (NULL);
+        while (n--)
+        {
+                if (*ptr == ch)
+                        return (void *)ptr;
+                ptr++;
+        }
+        return (NULL);
+}
+
+int		main(void)
+{
+    const char str[] = "42Madrid";
+    char *result;
+    char ch = 'M';
+
+    result = ft_memchr(str, ch, 8);
+    printf("Resultado: %p\n", (void *)result);
+    printf("Carácter encontrado: %c\n", result ? *result : 'N');
+
     return (0);
 }
 */
