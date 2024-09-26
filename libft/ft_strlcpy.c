@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 21:01:49 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/24 11:45:39 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/09/26 16:24:34 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 
 	src_len = ft_strlen(src);
 	if (destsize == 0)
-		return (0);
+		return (src_len);
 	i = 0;
 	while (i + 1 < destsize && src[i])
 	{
