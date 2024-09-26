@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 18:43:23 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/23 14:19:13 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/09/26 12:18:27 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t			i;
 
 	s = b;
-	if (!b)
-		return (NULL);
 	i = 0;
 	while (i < len)
 	{
