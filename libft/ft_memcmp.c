@@ -6,14 +6,14 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 17:36:56 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/24 18:09:22 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:41:36 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
 
-int	memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*ptr1;
 	unsigned char	*ptr2;
