@@ -6,7 +6,8 @@ AR			= ar rcs
 RM			= rm -f
 
 # Fuentes
-SRCS	= 	ft_isalpha.c \
+
+SRCS	=	ft_isalpha.c \
 			ft_isdigit.c \
 			ft_isalnum.c \
 			ft_isascii.c \
@@ -29,8 +30,8 @@ SRCS	= 	ft_isalpha.c \
 			ft_atoi.c \
 			ft_calloc.c \
 			ft_strdup.c \
-
-
+			ft_substr.c \
+			ft_strjoin.c
 
 # Objetos
 OBJS		= $(SRCS:.c=.o)

@@ -5,12 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/24 17:36:56 by ysavalen          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/09/28 22:43:46 by ysavalen         ###   ########.fr       */
-=======
-/*   Updated: 2024/09/28 15:41:36 by ysavalen         ###   ########.fr       */
->>>>>>> cf74dc591be7602e084c95e70c41b8741e9781cd
+/*   Created: 2024/10/01 16:31:29 by ysavalen          #+#    #+#             */
+/*   Updated: 2024/10/01 16:36:44 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +17,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*ptr1;
 	const unsigned char	*ptr2;
-	size_t			i;
+	size_t				i;
 
 	ptr1 = (const unsigned char *)s1;
 	ptr2 = (const unsigned char *)s2;

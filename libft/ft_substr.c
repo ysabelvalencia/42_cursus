@@ -6,12 +6,13 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 09:51:52 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/30 09:51:52 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:24:25 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

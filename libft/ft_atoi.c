@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:13:47 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/25 18:13:47 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:38:33 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_atoi(const char *str)
 	}
 	if (str[i] == '\0')
 		return (0);
-	while (isdigit(str[i]))
+	while (ft_isdigit(str[i]))
 	{
 		result = result * 10 + (str[i] - '0');
 		i++;
