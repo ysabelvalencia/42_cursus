@@ -15,5 +15,32 @@
 
 char	**ft_split(char const *s, char c)
 {
+	size_t	s_len;
+	size_t	i;
+	size_t	start;
+	size_t	sub_index;
+	size_t	num_subtrings;
+	char	**result;
+	char	*substring;
 
+	if (s == NULL)
+		return (NULL);
+	s_len = ft_strlen(s);
+	i = 0;
+	while (i <= s_len)
+	{
+		if (s[i] != c && s[i] != '\0')
+		{
+			if (i = 0 || s[i - 1] == c)
+				start = i;
+		}
+		else
+		{
+			if (i > 0 && s[i - 1] != c)
+			{
+
+			}
+		}
+		i++;
+	}	
 }
