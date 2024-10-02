@@ -32,10 +32,10 @@ SRCS	=	ft_isalpha.c \
 			ft_strdup.c \
 			ft_substr.c \
 			ft_strjoin.c \
-			ft_strtrim.c
+			ft_itoa.c
 
 # Objetos
-OBJS		= $(SRCS:.c=.o)
+OBJS	= $(SRCS:.c=.o)
 
 # Reglas
 all: $(NAME)

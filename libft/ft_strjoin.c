@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 23:59:22 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/30 23:59:22 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/02 19:52:05 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	s2_len;
 	char	*new;
 
-	if (!s1 ||!s2)
+	if (!s1 && !s2)
 		return (NULL);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);

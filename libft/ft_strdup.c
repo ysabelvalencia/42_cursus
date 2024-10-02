@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:29:06 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/10/01 18:42:59 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/02 19:17:49 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(const char *s1)
 		return (NULL);
 	len = ft_strlen(s1);
 	str = malloc(len + 1);
-	if (str == NULL)
+	if (!str)
 		return (NULL);
 	ft_memcpy(str, s1, len);
 	str[len] = '\0';
