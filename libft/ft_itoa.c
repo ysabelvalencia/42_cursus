@@ -9,6 +9,7 @@
 /*   Updated: 2024/10/02 19:13:54 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
 #include "libft.h"
 #include <stdlib.h>
 #include <stddef.h>
@@ -68,3 +69,4 @@ char	*ft_itoa(int n)
 	ft_write_string(s, n, len);
 	return (s);
 }
+*/
