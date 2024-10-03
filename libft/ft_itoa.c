@@ -6,17 +6,15 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 16:20:54 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/10/02 19:13:54 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:40:47 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
+
 #include "libft.h"
 #include <stdlib.h>
 #include <stddef.h>
 
-//itera y divide entre 10 en cada iteracción
-//hasta conseguir cuantos digitos tiene
-static int	ft_count_digits(int n)
+static int	ft_count_digits(long n)
 {
 	int	count;
 
@@ -36,7 +34,7 @@ static int	ft_count_digits(int n)
 	return (count);
 }
 
-static void	ft_write_string(char *s, int n, int len)
+static void	ft_write_string(char *s, long n, int len)
 {
 	if (n < 0)
 	{
@@ -61,12 +59,13 @@ char	*ft_itoa(int n)
 {
 	int		len;
 	char	*s;
+	long	num;
 
-	len = ft_count_digits(n);
+	num = (long)n;
+	len = ft_count_digits(num);
 	s = (char *)malloc(len + 1);
 	if (!s)
 		return (NULL);
-	ft_write_string(s, n, len);
+	ft_write_string(s, num, len);
 	return (s);
 }
-*/
