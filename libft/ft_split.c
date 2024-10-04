@@ -6,10 +6,10 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 20:37:55 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/10/02 19:10:48 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/05 00:23:28 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
+
 #include "libft.h"
 #include <stdlib.h>
 
