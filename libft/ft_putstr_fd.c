@@ -14,10 +14,6 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	s_len;
-
-	if (!s)
-		return ;
-	s_len = ft_strlen(s);
-	write (fd, s, s_len);
+	if (s)
+		write(fd, s, ft_strlen(s));
 }
