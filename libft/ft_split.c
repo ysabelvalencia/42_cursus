@@ -28,7 +28,7 @@ static int	ft_count_substring(char const *s, char c)
 			count++;
 		}
 		else if (*s == c)
-			in_subtring = 0;
+			in_substring = 0;
 		s++;
 	}
 	return (count);
@@ -55,7 +55,7 @@ static char	*ft_malloc_word(char const *s, char c)
 	return (word);
 }
 
-static void	free_split(char **split, int i)
+static void	ft_free_split(char **split, int i)
 {
 	while (i > 0)
 	{
@@ -65,7 +65,44 @@ static void	free_split(char **split, int i)
 	free(split);
 }
 
+static int	ft_assign_words(char const *s, char c, char **split)
+{
+	int	i;
+
+	i = 0;
+	while (*s)
+	{
+		if (*s != c)
+		{
+			split[i] = ft_malloc_word(s, c);
+			if (!split[i])
+			{
+				ft_free_split(split, i);
+				return (0);
+			}
+			i++;
+			while (*s && *s != c)
+				s++;
+		}
+		else
+			s++;
+	}
+	split[i] = NULL;
+	return (1);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	return (0);	
+	int		word_count;
+	char	**split;
+
+	if (!s)
+		return (NULL);
+	word_count = ft_count_substring(s, c);
+	split = (char **)malloc((word_count + 1) * sizeof(char *));
+	if (!split)
+		return (NULL);
+	if (!ft_assign_words(s, c, split))
+		return (NULL);
+	return (split);
 }
