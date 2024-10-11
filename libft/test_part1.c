@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   test_part1.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:10:47 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/09/29 16:08:42 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:37:32 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -593,14 +593,14 @@ int	main(void)
 */
 
 /*
-void	*ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t elements, size_t size)
 {
         void    *ptr;
 
-        ptr = (void *)malloc(nmemb * size);
+        ptr = (void *)malloc(elements * size);
         if (!ptr)
                 return (NULL);
-        ft_bzero(ptr, nmemb * size);
+        ft_bzero(ptr, elements * size);
         return (ptr);
 }
 
