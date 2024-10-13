@@ -10,19 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stddef.h>
-#include <stdlib.h>
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t			s_len;
 	unsigned int	i;
 
 	if (!s || !f)
 		return ;
-	s_len = ft_strlen(s);
 	i = 0;
-	while (i < s_len)
+	while (s[i] != '\0')
 	{
 		f(i, &s[i]);
 		i++;
