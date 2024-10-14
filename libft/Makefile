@@ -1,11 +1,9 @@
-# Variables
 NAME		= libft.a
-CC			= gcc
+CC			= cc
 CFLAGS		= -Wall -Wextra -Werror
+INCLUDE		= libft.h
 AR			= ar rcs
 RM			= rm -f
-
-# Fuentes
 
 SRCS	=	ft_isalpha.c \
 			ft_isdigit.c \
@@ -42,19 +40,23 @@ SRCS	=	ft_isalpha.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c 
 
-# Objetos
 OBJS	= $(SRCS:.c=.o)
 
-# Reglas
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) $(INCLUDE)
+	@echo "Compiling $(NAME)..."
 	$(AR) $(NAME) $(OBJS)
 
 clean:
+	@echo "Removing object files..."
 	$(RM) $(OBJS)
 
 fclean: clean
+	@echo "Removing $(NAME)..."
 	$(RM) $(NAME)
 
 re: fclean all
