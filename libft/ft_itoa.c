@@ -6,7 +6,7 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 16:20:54 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/10/03 17:40:47 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/15 16:56:25 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,8 @@ char	*ft_itoa(int n)
 	char	*s;
 	long	num;
 
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	num = (long)n;
 	len = ft_count_digits(num);
 	s = (char *)malloc(len + 1);
