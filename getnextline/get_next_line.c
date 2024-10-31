@@ -6,7 +6,8 @@
 /*   By: ysavalen <ysavalen@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:24:44 by ysavalen          #+#    #+#             */
-/*   Updated: 2024/10/31 17:24:54 by ysavalen         ###   ########.fr       */
+/*   Updated: 2024/10/31 20:03:15 by ysavalen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "get_next_line.h"
